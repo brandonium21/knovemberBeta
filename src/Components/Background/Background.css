@@ -1,0 +1,23 @@
+.progress-holder{
+    height: calc(100vh - 77px);
+    width: 100%;
+    background-color: #fff; /*#5fcbd9; */
+}
+
+.progress-bar{
+    height: 100%;
+    background-color: #5fcbd9;
+}
+
+
+.wave {
+	background-image: url("https://i.imgur.com/VJQQLTS.png?1");
+	color: transparent;
+	animation: Wave-Loader 5s infinite linear;
+	background-repeat: repeat-y;
+	opacity: 1;
+}
+@keyframes Wave-Loader {
+	0% { background-position: right 1359px; }
+	100% { background-position: right top; }
+}

@@ -1,0 +1,14 @@
+.extra-info-holder{
+    
+}
+.extra-info-card{
+    
+}
+
+.extra-info-item{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.extra-info-item:nth-child(even) {
+    background-color: #b8dafb;
+}

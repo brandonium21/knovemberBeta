@@ -1,0 +1,24 @@
+.footer {
+background: #fff;
+}
+.footer a {
+color: #fff;
+font-size: 20px;
+padding: 10px;
+min-width: 33vw;
+transition: all .5s ease;
+}
+
+.footer a:hover {
+color: black;
+}
+
+.fb-bg{
+    background: #3C5A99;
+}
+.tw-bg{
+    background-color: #1DA1F2;
+}
+.pin-bg{
+    background-color: #BD081C;
+}

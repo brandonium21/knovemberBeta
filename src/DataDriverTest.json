@@ -1,0 +1,334 @@
+{
+    "candidates": {
+        "michaeal-bennet": {
+            "name": "Micheal Bennet",
+            "id": "michaeal-bennet",
+            "url": "https://michaelbennet.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/710170820593594368/mmQAxCJk_400x400.jpg",
+            "twitter": "https://twitter.com/michaelbennet",
+            "wiki": "https://ballotpedia.org/Michael_Bennet"
+        },
+        "joe-biden": {
+            "name": "Joe Biden",
+            "id": "joe-biden",
+            "url": "https://joebiden.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/1125421815348834312/f4dUzudU_400x400.png",
+            "twitter": "https://twitter.com/JoeBiden",
+            "wiki": "https://ballotpedia.org/Joe_Biden"
+        },
+        "bill-de-blasio": {
+            "name": "Bill De Blasio",
+            "id": "bill-de-blasio",
+            "url": "https://billdeblasio.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/1129060882678312961/jNBAnDqG_400x400.png",
+            "twitter": "https://twitter.com/BilldeBlasio",
+            "wiki": "https://ballotpedia.org/Bill_de_Blasio"
+        },
+        "cory-booker": {
+            "name": "Cory Booker",
+            "id": "cory-booker",
+            "url": "https://corybooker.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/1091308075041079297/Yz_PLR20_400x400.jpg",
+            "twitter": "https://twitter.com/CoryBooker",
+            "wiki": "https://ballotpedia.org/Cory_Booker"
+        },
+        "steve-bullock": {
+            "name": "Steve-Bullock",
+            "id": "steve-bullock",
+            "url": "https://stevebullock.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/1068569529276481536/dBYca_Xm_400x400.jpg",
+            "twitter": "https://twitter.com/GovernorBullock",
+            "wiki": "https://ballotpedia.org/Steve_Bullock"
+        },
+        "pete-buttigieg": {
+            "name": "Pete Buttigieg",
+            "id": "pete-buttigieg",
+            "url": "https://peteforamerica.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/1117312669546164224/k2cPXvek_400x400.png",
+            "twitter": "https://twitter.com/PeteButtigieg",
+            "wiki": "https://ballotpedia.org/Pete_Buttigieg"
+        },
+        "julian-castro": {
+            "name": "Juliàn Castro",
+            "id": "julian-castro",
+            "url": "https://www.julianforthefuture.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/1084179879384494080/6pZz_T3l_400x400.jpg",
+            "twitter": "https://twitter.com/JulianCastro",
+            "wiki": "https://ballotpedia.org/Juli%C3%A1n_Castro"
+        },
+        "john-delaney": {
+            "name": "John Delaney",
+            "id": "john-delaney",
+            "url": "https://www.johndelaney.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/1017761512818012161/DXlTw-1E_400x400.jpg",
+            "twitter": "https://twitter.com/JohnDelaney",
+            "wiki": "https://ballotpedia.org/John_Delaney"
+        },
+        "tulsi-gabbard": {
+            "name": "Tulsi Gabbard",
+            "id": "tulsi-gabbard",
+            "url": "https://www.tulsi2020.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/1084116035303804928/vEQ-8yXX_400x400.jpg",
+            "twitter": "https://twitter.com/TulsiGabbard",
+            "wiki": "https://ballotpedia.org/Tulsi_Gabbard"
+        },
+        "kirsten-gillibrand": {
+            "name": "Kirsten Gillibrand",
+            "id": "kirsten-gillibrand",
+            "url": "kirstengillibrand.com",
+            "avatar": "https://pbs.twimg.com/profile_images/1139649498786013184/3aHp3eOC_400x400.jpg",
+            "twitter": "https://twitter.com/SenGillibrand",
+            "wiki": "https://ballotpedia.org/Kirsten_Gillibrand"
+        },
+        "mike-gravel": {
+            "name": "Mike Gravel",
+            "id": "mike-gravel",
+            "url": "https://www.mikegravel.org/",
+            "avatar": "https://pbs.twimg.com/profile_images/1125542253735424000/En7dgjGI_400x400.png",
+            "twitter": "https://twitter.com/MikeGravel",
+            "wiki": "https://ballotpedia.org/Mike_Gravel"
+        },
+        "kamala-harris": {
+            "name": "Kamala Harris",
+            "id": "kamala-harris",
+            "url": "https://kamalaharris.org/",
+            "avatar": "https://pbs.twimg.com/profile_images/1093306247766515712/MBaqSY2M_400x400.jpg",
+            "twitter": "https://twitter.com/KamalaHarris",
+            "wiki": "https://ballotpedia.org/Kamala_Harris"
+        },
+        "john-hickenlooper": {
+            "name": "John Hickenlooper",
+            "id": "john-hickenlooper",
+            "url": " https://hickenlooper.com",
+            "avatar": "https://pbs.twimg.com/profile_images/1102532550885404672/RJU91nA-_400x400.png",
+            "twitter": "https://twitter.com/Hickenlooper",
+            "wiki": "https://ballotpedia.org/John_Hickenlooper"
+        },
+        "jay-inslee": {
+            "name": "Jay Inslee",
+            "id": "jay-inslee",
+            "url": "https://www.jayinslee.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/871081448358334464/mx778QP5_400x400.jpg",
+            "twitter": "https://twitter.com/GovInslee",
+            "wiki": "https://ballotpedia.org/Jay_Inslee"
+        },
+        "amy-klobuchar": {
+            "name": "Amy Klobuchar",
+            "id": "amy-klobuchar",
+            "url": "https://amyklobuchar.com",
+            "avatar": "https://pbs.twimg.com/profile_images/1059812997982511105/lgFAlE5t_400x400.jpg",
+            "twitter": "https://twitter.com/amyklobuchar",
+            "wiki": "https://ballotpedia.org/Amy_Klobuchar"
+        },
+        "wayne-messam": {
+            "name": "Wayne Messam",
+            "id": "wayne-messam",
+            "url": "https://wayneforusa.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/1109619582677983232/CYxbc8ty_400x400.jpg",
+            "twitter": "https://twitter.com/WayneMessam",
+            "wiki": "https://ballotpedia.org/Wayne_Messam"
+        },
+        "seth-moulton": {
+            "name": "Seth Moulton",
+            "id": "seth-moulton",
+            "url": "https://sethmoulton.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/1120277608523026432/N66Alj6P_400x400.jpg",
+            "twitter": "https://twitter.com/sethmoulton",
+            "wiki": "https://ballotpedia.org/Seth_Moulton"
+        },
+        "beto-orourke": {
+            "name": "Beto O' Rourke",
+            "id": "beto-orourke",
+            "url": "https://betoorourke.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/1018220845829951489/k52zY0rS_400x400.jpg",
+            "twitter": "https://twitter.com/BetoORourke",
+            "wiki": "https://ballotpedia.org/Beto_O%27Rourke"
+        },
+        "tim-ryan": {
+            "name": "Tim Ryan",
+            "id": "tim-ryan",
+            "url": "https://timryanforamerica.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/1141762398027702273/qsRBAjpj_400x400.jpg",
+            "twitter": "https://twitter.com/TimRyan",
+            "wiki": "https://ballotpedia.org/Tim_Ryan_(Ohio)"
+        },
+        "bernie-sanders": {
+            "name": "Bernie Sanders",
+            "id": "bernie-sanders",
+            "url": "https://berniesanders.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/794619281271033856/Fs0QQaH7_400x400.jpg",
+            "twitter": "https://twitter.com/SenSanders",
+            "wiki": "https://ballotpedia.org/Bernie_Sanders"
+        },
+        "joe-sestak": {
+            "name": "Joe Sestak",
+            "id": "joe-sestak",
+            "url": "https://www.joesestak.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/708686702081155072/le1ze7HE_400x400.jpg",
+            "twitter": "https://twitter.com/JoeSestak",
+            "wiki": "https://ballotpedia.org/Joe_Sestak"
+        },
+        "tom-steyer": {
+            "name": "Tom Steyer",
+            "id": "tom-steyer",
+            "url": "https://www.tomsteyer.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/1148571376355119104/EqZutNij_400x400.png",
+            "twitter": "https://twitter.com/TomSteyer",
+            "wiki": "https://ballotpedia.org/Thomas_Steyer"
+        },
+        "donald-trump": {
+            "name": "Donald Trump",
+            "id": "donald-trump",
+            "url": "https://www.donaldjtrump.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg",
+            "twitter": "https://twitter.com/realDonaldTrump",
+            "wiki": "https://ballotpedia.org/Donald_Trump"
+        },
+        "elizabeth-warren": {
+            "name": "Elizabeth Warren",
+            "id": "elizabeth-warren",
+            "url": "https://elizabethwarren.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/1136369779374059520/ZYmLzUtO_400x400.png",
+            "twitter": "https://twitter.com/ewarren",
+            "wiki": "https://ballotpedia.org/Elizabeth_Warren"
+        },
+        "bill-weld": {
+            "name": "Bill Weld",
+            "id": "bill-weld",
+            "url": "https://www.weld2020.org/",
+            "avatar": "https://pbs.twimg.com/profile_images/1117878796181360642/S7iMiyJg_400x400.png",
+            "twitter": "https://twitter.com/govbillweld",
+            "wiki": "https://ballotpedia.org/Bill_Weld"
+        },
+        "marianne-williamson": {
+            "name": "Marianna Williamson",
+            "id": "marianne-williamson",
+            "url": "https://www.marianne2020.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/859507720814305281/nTvKAGL6_400x400.jpg",
+            "twitter": "https://twitter.com/marwilliamson",
+            "wiki": "https://ballotpedia.org/Marianne_Williamson"
+        },
+        "andrew-yang": {
+            "name": "Andrew Yang",
+            "id": "andrew-yang",
+            "url": "https://www.yang2020.com/",
+            "avatar": "https://pbs.twimg.com/profile_images/1042886888225267712/1W9BKljE_400x400.jpg",
+            "twitter": "https://twitter.com/andrewyang",
+            "wiki": "https://ballotpedia.org/Andrew_Yang"
+        }
+    },
+
+    "testIssues": {
+        "test": {
+            "title": "Single-Payer Healthcare"
+        },
+        "test2": {
+            "title": "Pre-Exising Conditions"
+        }
+    },
+
+    "issues": {
+        "single-payer-healthcare": {
+            "stance": 0,
+            "title": "Single-Payer Healthcare",
+            "id": "single-payer-healthcare",
+            "candidate": {
+                "michaeal-bennet": 0,
+                "joe-biden": 0,
+                "bill-de-blasio": 0,
+                "cory-booker": 0,
+                "steve-bullock": 0,
+                "pete-buttigieg": 0,
+                "julian-castro": 0,
+                "john-delaney": 0,
+                "tulsi-gabbard": 0,
+                "kirsten-gillibrand": 0,
+                "mike-gravel": 0,
+                "kamala-harris": 0,
+                "john-hickenlooper": 0,
+                "jay-inslee": 0,
+                "amy-klobuchar": 0,
+                "wayne-messam": 0,
+                "seth-moulton": 0,
+                "beto-orourke": 0,
+                "tim-ryan": 0,
+                "bernie-sanders": 1,
+                "joe-sestak": 0,
+                "tom-steyer": 0,
+                "donald-trump": 0,
+                "elizabeth-warren": 0,
+                "bill-weld": 0,
+                "marianne-williamson": 0,
+                "andrew-yang": 0
+            }
+        },
+        "pre-existing-conditions": {
+            "stance": 0,
+            "title": "Pre-Exising Conditions",
+            "id": "pre-existing-conditions",
+            "candidate": {
+                "michaeal-bennet": 0,
+                "joe-biden": 0,
+                "bill-de-blasio": 0,
+                "cory-booker": 0,
+                "steve-bullock": 0,
+                "pete-buttigieg": 0,
+                "julian-castro": 0,
+                "john-delaney": 0,
+                "tulsi-gabbard": 0,
+                "kirsten-gillibrand": 0,
+                "mike-gravel": 0,
+                "kamala-harris": 0,
+                "john-hickenlooper": 0,
+                "jay-inslee": 0,
+                "amy-klobuchar": 0,
+                "wayne-messam": 0,
+                "seth-moulton": 0,
+                "beto-orourke": 0,
+                "tim-ryan": 0,
+                "bernie-sanders": 0,
+                "joe-sestak": 0,
+                "tom-steyer": 0,
+                "donald-trump": 0,
+                "elizabeth-warren": 0,
+                "bill-weld": 0,
+                "marianne-williamson": 0,
+                "andrew-yang": 0
+            }
+        },
+        "drug-price-regulation": {
+            "stance": 0,
+            "title": "Drug Price Regulation",
+            "id": "drug-price-regulation",
+            "candidate": {
+                "michaeal-bennet": 0,
+                "joe-biden": 0,
+                "bill-de-blasio": 0,
+                "cory-booker": 0,
+                "steve-bullock": 0,
+                "pete-buttigieg": 0,
+                "julian-castro": 0,
+                "john-delaney": 0,
+                "tulsi-gabbard": 0,
+                "kirsten-gillibrand": 0,
+                "mike-gravel": 0,
+                "kamala-harris": 0,
+                "john-hickenlooper": 0,
+                "jay-inslee": 0,
+                "amy-klobuchar": 0,
+                "wayne-messam": 0,
+                "seth-moulton": 0,
+                "beto-orourke": 0,
+                "tim-ryan": 0,
+                "bernie-sanders": 0,
+                "joe-sestak": 0,
+                "tom-steyer": 0,
+                "donald-trump": 0,
+                "elizabeth-warren": 0,
+                "bill-weld": 0,
+                "marianne-williamson": 0,
+                "andrew-yang": 0
+            }
+        }
+    }
+}

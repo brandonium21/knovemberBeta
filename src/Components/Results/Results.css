@@ -1,0 +1,42 @@
+.results-card {
+    background: #FFFFFF;
+    max-width: 800px;
+    max-height: 100vh;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-sizing: border-box;
+    padding: 48px;
+    text-align: center;
+  }
+
+  .results-card-container {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+  }
+
+  .title {
+    margin: 0 0 12px;
+    color: #D18B49;
+    font-size: 24px;
+    transition: 0.5s ease;
+  }
+  
+  .result-description {
+    font-size: 0.8em;
+  }
+
+@media only screen and (max-width: 600px) {
+    .results-card {
+        max-width: 90%;
+        max-height: 75vh;
+      }
+    
+    .results-card-container {
+        top: 100px;
+    }
+} 

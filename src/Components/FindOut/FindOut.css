@@ -1,0 +1,12 @@
+.root {
+    margin-bottom: 60px;
+}
+.footer {
+    background-color: #ffffff;
+    font-size: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+}
