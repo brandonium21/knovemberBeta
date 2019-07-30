@@ -59,16 +59,17 @@ class FindOut extends React.Component {
             <Container style={{ marginBottom: "60px" }}>
                 <h3 className="mt-5">FindOut</h3>
                 <p className="text-secondary">We've created politcal issue guides to ease the process of finding your Ideal candidate.</p>
+                <p className="text-primary">Please rate each issue on its importance to you.</p>
 
                 {this.state.formattedIssues.map((IssueGroup, j) => (
                     <Row className="mt-5" key={j}>
                         
                         { IssueGroup.map((issue, i )=> (
                             <Col md={4} sm={12} key={i} className="mb-3">
-                                <Link 
+                                { /*<Link 
                                     to={ "/guide/" + issue }
                                     className="text-decoration-none text-dark"
-                                >
+                                >*/}
                                     <Card className="shadow border-rounded border-white">
                                         <Card.Body>
                                             <Card.Title>{ this.state.meta.issueName[issue]}</Card.Title>
@@ -76,11 +77,16 @@ class FindOut extends React.Component {
                                             Which candidates closely share my views on { this.state.meta.issueName[issue]}
                                             </Card.Text>
                                             <div className="rating-holder">
-                                                <Rating onClick={(rating) =>  this.handleRating(rating,issue)} initialRating={this.state.weight[issue]} fractions={2} />
+                                                <Rating 
+                                                    onClick={(rating) =>  this.handleRating(rating,issue)} 
+                                                    initialRating={this.state.weight[issue]} 
+                                                    fractions={2}
+                                                    fullSymbol={<span style={{ display: "inline-block", borderRadius: "50%", border: "5px double white", width: "30px", height: "30px", backgroundColor: "#74b8f8" }}></span>}
+                                                />
                                             </div>
                                         </Card.Body>
                                     </Card>
-                                </Link>
+                                { /* </Link> */ }
                             </Col>
                         ))
                         }
@@ -92,7 +98,12 @@ class FindOut extends React.Component {
 
             <div className="footer shadow-lg">
             <ProgressBar now={ this.state.progress } variant={'info'} className="bg-white" style={{height: '3px'}}/>
-                    <Button className="mt-2" disabled={ this.state.progress === 100 ? false : true }>Continue</Button>
+            <Link 
+                to={ "/guide/"}
+                className="text-decoration-none text-dark"
+            >
+                <Button className="mt-2" disabled={ this.state.progress === 100 ? false : true }>Continue</Button>
+            </Link>
             </div> 
             
             </div>

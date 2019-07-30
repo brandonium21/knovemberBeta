@@ -233,7 +233,7 @@
         "immigration": "Immigration",
         "domestic-policy": "Domestic Policy",
         "economy": "The Economy",
-        "electorial": "The Electorial",
+        "electorial": "The Electorial Process",
         "education": "Education",
         "foreign-policy": "Foreign Policy",
         "criminal": "Criminal Issues",
@@ -242,16 +242,364 @@
     },
 
     "issues": {
-        "environment": {},
-        "immigration": {},
-        "domestic-policy": {},
-        "economy": {},
-        "electorial": {},
-        "education": {},
-        "foreign-policy": {},
-        "criminal": {},
-        "social": {},
-        "science": {},
+        "environment": {
+            "climate-change": {
+                "stance": 0,
+                "title": "Climate Change",
+                "id": "climate-change",
+                "description": "The government should increase environmental regulations to prevent climate change.",
+                "more-info": [
+                    {
+                        "proof": "https://www.globalchange.gov/climate-change",
+                        "text": "Changes in average weather conditions that persist over multiple decades or longer."
+                    },
+                    {
+                        "proof": "https://en.wikipedia.org/wiki/Climate_change",
+                        "text": "human activity (releasing carbon into the atmosphere) currently contributing to global warming."
+                    }
+                ]
+            },
+            "paris-climate-agreement": {
+                "stance": 0,
+                "title": "The Paris Climategreement",
+                "id": "paris-climate-agreement",
+                "description": "The U.S. should withdraw from the Paris Climate Agreement.",
+                "more-info": [
+                    {
+                        "proof": "https://www.globalchange.gov/climate-change",
+                        "text": "Changes in average weather conditions that persist over multiple decades or longer."
+                    },
+                    {
+                        "proof": "https://en.wikipedia.org/wiki/Climate_change",
+                        "text": "human activity (releasing carbon into the atmosphere) currently contributing to global warming."
+                    }
+                ]
+            },
+            "alternative-energy": {
+                "stance": 0,
+                "title": "Alternative Energy",
+                "id": "alternative-energy",
+                "description": "The government should give tax credits and subsidies to the green power industry?",
+                "more-info": [
+                    {
+                        "proof": "https://www.mnn.com/earth-matters/energy/stories/what-is-green-energy",
+                        "text": "Green energy comes from natural sources such as sunlight, wind, rain, tides, plants, algae and geothermal heat. These energy resources are renewable, meaning they're naturally replenished."
+                    },
+                    {
+                        "proof": "https://www.investopedia.com/terms/s/subsidy.asp",
+                        "text": "A sum of money granted by the government or a public body to assist an industry or business so that the price of a commodity or service may remain low or competitive."
+                    }
+                ]
+            },
+            "fracking": {
+                "stance": 0,
+                "title": "Fracking",
+                "id": "fracking",
+                "description": "Using hydraulic fracking to extract oil and natural gas resources.",
+                "more-info": [
+                    {
+                        "proof": "https://www.bbc.com/news/uk-14432401",
+                        "text": "the process of injecting liquid at high pressure into subterranean rocks, boreholes, etc. so as to force open existing fissures and extract oil or gas."
+                    }
+                ]
+            },
+            "plastic-product-ban": {
+                "stance": 0,
+                "title": "Plastic Product Ban",
+                "id": "plastic-product-ban",
+                "description": "Disposable products (such as plastic cups, plates, and cutlery) that contain less than 50% of biodegradable material should be banned.",
+                "more-info": [
+                    {
+                        "proof": "https://www.bbc.com/news/uk-14432401",
+                        "text": "the process of injecting liquid at high pressure into subterranean rocks, boreholes, etc. so as to force open existing fissures and extract oil or gas."
+                    }
+                ]
+            }
+        },
+        "immigration": {
+            "border-wall": {
+                "stance": 0,
+                "title": "Border Wall",
+                "id": "border-wall",
+                "description": "The U.S. should build a wall along the southern border.",
+                "more-info": []
+            },
+            "immigration": {
+                "stance": 0,
+                "title": "Immigration",
+                "id": "immigration",
+                "description": "Children of illegal immigrants should be granted legal citizenship.",
+                "more-info": []
+            },
+            "immigration-ban": {
+                "stance": 0,
+                "title": "Immigration Ban",
+                "id": "immigration-ban",
+                "description": "There should be a temporary ban on all immigration to the U.S..",
+                "more-info": []
+            },
+            "deporting-criminal-immigrants": {
+                "stance": 0,
+                "title": "Criminal Immigrant Deportation",
+                "id": "deporting-criminal-immigrants",
+                "description": "Immigrants should be deported if they commit a serious crime.",
+                "more-info": []
+            },
+            "sanctuary-cities": {
+                "stance": 0,
+                "title": "Sanctuary Cities",
+                "id": "sanctuary-cities",
+                "description": "Sanctuary Cities should recieve federal funding.",
+                "more-info": [
+                    {
+                        "proof": "https://cis.org/Map-Sanctuary-Cities-Counties-and-States",
+                        "text": "Sanctuary city refers to municipal jurisdictions, that limit their cooperation with the national government's effort to enforce immigration law."
+                    }
+                ]
+            },
+            "illegal-immigrant-detainment": {
+                "stance": 0,
+                "title": "Illegal Immigrant Detainment",
+                "id": "illegal-immigrant-detainment",
+                "description": "Local law enforcement should be allowed to detain illegal immigrants for minor crimes and transfer them to federal immigration authorities.",
+                "more-info": [
+                    {
+                        "proof": "https://www.bbc.com/news/uk-14432401",
+                        "text": "the process of injecting liquid at high pressure into subterranean rocks, boreholes, etc. so as to force open existing fissures and extract oil or gas."
+                    }
+                ]
+            },
+            "border-security": {
+                "stance": 0,
+                "title": "Border Security",
+                "id": "border-security",
+                "description": "The U.S. increase restrictions on its current border security policy.",
+                "more-info": [
+                    {
+                        "proof": "https://www.bbc.com/news/uk-14432401",
+                        "text": "the process of injecting liquid at high pressure into subterranean rocks, boreholes, etc. so as to force open existing fissures and extract oil or gas."
+                    }
+                ]
+            }
+        },
+        "domestic-policy": {
+            "gun-control": {
+                "stance": 0,
+                "title": "Gun Control",
+                "id": "gun-control",
+                "description": "There should be more restrictions of the process of purchasing a gun.",
+                "more-info": []
+            },
+            "gerrymandering": {
+                "stance": 0,
+                "title": "Gerrymandering",
+                "id": "gerrymandering",
+                "description": "The redrawing of Congressional districts should be controlled by an independent, non-partisan commission.",
+                "more-info": [
+                    {
+                        "proof": "https://www.britannica.com/topic/gerrymandering",
+                        "text": "Currently, the redistricting of congressional boundaries is controlled by state legislature every ten years. Gerrymandering is the redrawing of districts with the intent of benefiting a political party. It is most often implemented by state political parties with the intent of marginalizing districts of voters who represent the minority party. To gain extra seats, the incumbent party will redraw voting districts so that voters of the minority party will be grouped into smaller districts with less seats."
+                    }
+                ]
+            },
+            "drug-policy": {
+                "stance": 0,
+                "title": "Drug policy",
+                "id": "drug-policy",
+                "description": "Drug use should be decriminalized.",
+                "more-info": []
+            },
+            "affirmative-action": {
+                "stance": 0,
+                "title": "Affirmitive Action",
+                "id": "affirmative-action",
+                "description": "Affirmative action programs should exist.",
+                "more-info": [
+                    {
+                        "proof": "https://www.law.cornell.edu/wex/affirmative_action",
+                        "text": "Affirmative action is a policy that encourages the increased representation of members of a minority group. In the U.S. these policies are often enacted by employers and educational institutions in education or employment."
+                    }
+                ]
+            },
+            "net-neutrality": {
+                "stance": 0,
+                "title": "Drug policy",
+                "id": "net-neutrality",
+                "description": "Internet service providers be allowed to speed up access to popular websites (that pay higher rates) at the expense of slowing down access to less popular websites (that pay lower rates).",
+                "more-info": [
+                    {
+                        "proof": "https://www.freepress.net/issues/free-open-internet/net-neutrality",
+                        "text": "Net Neutrality is the basic principle that prohibits internet service providers like AT&T, Comcast and Verizon from speeding up, slowing down or blocking any content, applications or websites you want to use."
+                    }
+                ]
+            }
+        },
+        "economy": {
+            "equal-pay": {
+                "stance": 0,
+                "title": "Equal Pay",
+                "id": "equal-pay",
+                "description": "Employers should be required to pay men and women the same salary for the same job.",
+                "more-info": []
+            },
+            "taxes": {
+                "stance": 0,
+                "title": "Taxes",
+                "id": "taxes",
+                "description": "The U.S. should raise taxes on the rich.",
+                "more-info": []
+            },
+            "corporate-tax": {
+                "stance": 0,
+                "title": "Corporate Tax",
+                "id": "corporate-tax",
+                "description": "The U.S. should raise the tax rate for corporations.",
+                "more-info": []
+            },
+            "government-spending": {
+                "stance": 0,
+                "title": "Government Spending",
+                "id": "government-spending",
+                "description": "The government should make cuts to public spending in order to reduce the national debt.",
+                "more-info": [
+                    {
+                        "proof": "www.businessdictionary.com/definition/public-spending.html",
+                        "text": "Money expended by a government to pay for defense, development projects, education, health, infrastructure, law and order maintenance, etc. Public spending is supported by taxation."
+                    }
+                ]
+            },
+            "universal-basic-income": {
+                "stance": 0,
+                "title": "Universal Basic Income",
+                "id": "universal-basic-income",
+                "description": "The U.S. should implement a universal basic income",
+                "more-info": [
+                    {
+                        "proof": "https://en.wikipedia.org/wiki/Basic_income",
+                        "text": "A periodic cash payment delivered to all on an individual basis without means test or work requirement."
+                    }
+                ]
+            },
+            "welfare": {
+                "stance": 0,
+                "title": "Welfare",
+                "id": "welfare",
+                "description": "There should be more restrictions on current welfare benefits.",
+                "more-info": [
+                    {
+                        "proof": "https://en.wikipedia.org/wiki/Basic_income",
+                        "text": "Welfare benefits come with a pre-decided share for everyone. Not everybody is eligible under distinct categories which restricts the amount of people given benefits. "
+                    }
+                ]
+            },
+            "capital-gains-tax": {
+                "stance": 0,
+                "title": "Capital Gains Tax",
+                "id": "capital-gains-tax",
+                "description": "The government should increase the tax rate on profits earned from the sale of stocks, bonds, and real estate.",
+                "more-info": [
+                    {
+                        "proof": "https://en.wikipedia.org/wiki/Capital_gains_tax",
+                        "text": "A capital gains tax is a tax on the profit realized on the sale of a non-inventory asset that was greater than the amount realized on the sale. The most common capital gains are realized from the sale of stocks, bonds, precious metals, and property."
+                    }
+                ]
+            },
+            "farm-subsidies": {
+                "stance": 0,
+                "title": "Farm Subsidies",
+                "id": "farm-subsidies",
+                "description": "The Government should subsidies farms.",
+                "more-info": [
+                    {
+                        "proof": "https://www.thebalance.com/farm-subsidies-4173885",
+                        "text": "Federal government funds paid to U.S. agribusinesses. They help reduce the risk farmers endure from the weather, commodities brokers, and disruptions in demand. The government currently subsidizes five of them (corn, soybeans, wheat, cotton, and rice)."
+                    }
+                ]
+            }
+        },
+        "electorial": {
+            "electorial-college": {
+                "stance": 0,
+                "title": "Electorial College",
+                "id": "electorial-college",
+                "description": "The Electorial College should be abolished.",
+                "more-info": [
+                    {
+                        "proof": "https://www.archives.gov/federal-register/electoral-college/about.html",
+                        "text": "The Electoral College consists of 538 electors. A majority of 270 electoral votes is required to elect the President. Your state's entitled allotment of electors equals the number of members in its Congressional delegation: one for each member in the House of Representatives plus two for your Senators."
+                    }
+                ]
+            },
+            "campaign-finance": {
+                "stance": 0,
+                "title": "Campaign Finance",
+                "id": "campaign-finance",
+                "description": "There should be a limit to the amount of money a candidate can receive from a donor.",
+                "more-info": []
+            }
+        },
+        "education": {
+            "student-loans": {
+                "stance": 0,
+                "title": "Student Loans",
+                "id": "student-loans",
+                "description": "The taxes on the rich should be increased to reduce the interest rate of student loans.",
+                "more-info": []
+            }
+        },
+        "foreign-policy": {
+            "military-spending": {
+                "stance": 0,
+                "title": "Military Spending",
+                "id": "military-spending",
+                "description": "The government should increase military spending.",
+                "more-info": []
+            },
+            "foreign-aid": {
+                "stance": 0,
+                "title": "Foreign Aid",
+                "id": "foreign-aid",
+                "description": "The U.S. should increase foreign aid spending.",
+                "more-info": []
+            },
+            "united-nations": {
+                "stance": 0,
+                "title": "United Nations",
+                "id": "united-nations",
+                "description": "The U.S. should remain in the United Nations.",
+                "more-info": [
+                    {
+                        "proof": "https://www.un.org/en/",
+                        "text": "The United Nations is an intergovernmental organization tasked with maintaining international peace and security, developing friendly relations among nations, achieving international co-operation, and being a centre for harmonizing the actions of nations."
+                    }
+                ]
+            }
+        },
+        "social": {
+            "abortion": {
+                "stance": 0,
+                "title": "Abortion",
+                "id": "abortion",
+                "description": "Pro-life.",
+                "more-info": [
+                    {
+                        "proof": "https://en.wikipedia.org/wiki/Anti-abortion_movement",
+                        "text": "Anti-abortion movements, also referred to as pro-life movements, are involved in the abortion debate advocating against the practice of abortion and its legality."
+                    },
+                    {
+                        "proof": "https://en.wikipedia.org/wiki/Abortion-rights_movements",
+                        "text": "Abortion-rights movements, also referred to as pro-choice movements, advocate for legal access to induced abortion services."
+                    }
+                ]
+            },
+            "gay-marriage": {
+                "stance": 0,
+                "title": "Gay Marriage",
+                "id": "gay-marriage",
+                "description": "Same sex marriage should be legal.",
+                "more-info": []
+            }
+        },
         "health": {
             "single-payer-healthcare": {
                 "stance": 0,
