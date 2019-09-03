@@ -1,5 +1,8 @@
 import React from 'react';
 import './ExtraInfo.css';
+import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class ExtraInfo extends React.Component {
     constructor(props) {
@@ -13,7 +16,10 @@ class ExtraInfo extends React.Component {
             <div className="container-fluid pt-4 bg-transparent extra-info-card">
                 <div className="card border-0 extra-info-card extra-info-holder">
                     <div className="card-body">
-                        <h5 className="card-title">The More You Know</h5>
+                        <Row>
+                            <Col><h5 className="card-title mt-2">The More You Know</h5></Col>
+                            <Col md={3}><Button variant="light" onClick={ this.props.close } className="pull-right">Close</Button></Col>
+                        </Row>
                         <hr />
                         <div>
                             {   this.props.moreInfo ?

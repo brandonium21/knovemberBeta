@@ -10,10 +10,26 @@ class Guide extends React.Component{
         this.state = {};
     }
 
+    /*{div: [
+        {#!each props.location.weights: [
+            {p: [
+                "#! each.weight",
+                ": ",
+                "#! props.location.weights['"
+            ]}
+        ]}
+    ]}*/
+
     render() {
         return (
             <div>
-              <InfoCard issue={this.props.match.params.guide} ></InfoCard>
+                {/*
+                    Object.keys(this.props.location.weights).map(
+                        // (weight) => <p>{weight + ": " + this.props.location.weights[weight]}</p>
+                        (weight) => <p>{`${weight}: ${this.props.location.weights[weight]}`}</p>
+                    )
+                    */}
+                <InfoCard weights={this.props.location.weights} ></InfoCard>
             </div>
         );
     }

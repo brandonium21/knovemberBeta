@@ -39,6 +39,7 @@ class App extends React.Component {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/guide/:guide" component={Guide} />
+            <Route path="/guide" exact component={Guide} />
             <Route path="/find-out" exact component={FindOut} />
             <Route render={ () => <h1>404 Error</h1> } />
           </Switch>

@@ -19,12 +19,24 @@ class Results extends React.Component {
         console.log(this.props);
         let metaData = this.props.resultsData;
         console.log(metaData);
-        let issues = Object.keys(metaData.issues[ this.props.issue ]);
+        let issues = []
+        let topics = Object.keys(metaData.issues);
+
+        for (let topic = 0; topic < topics.length; topic++){
+            for (let i = 0; i < Object.keys(metaData.issues[topics[topic]]).length; i++){
+                let curr_issue = Object.keys(metaData.issues[topics[topic]])[i]
+                issues.push({ 
+                    [ curr_issue ]: metaData.issues[topics[topic]][ curr_issue ]
+                } );
+            }
+        }
+
         let favorableCandidates = [];
         let mostFavorableCandidates = [];
 
         for (let issue = 0; issue < issues.length; issue++){
-            let candidates = Object.keys(metaData.issues[ this.props.issue ][issues[issue]].candidate);
+            // (cater)
+            let candidates = Object.keys(metaData.issues[ Object.keys(issues[issue])[0]][issues[issue]].candidate);
             for (let candidate = 0; candidate < candidates.length; candidate++){
                 if (metaData.issues[ this.props.issue ][issues[issue]]['candidate'][candidates[candidate]] === parseInt(metaData.issues[ this.props.issue ][issues[issue]]['stance'])){
                     favorableCandidates.push(candidates[candidate])

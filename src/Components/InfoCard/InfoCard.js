@@ -19,27 +19,39 @@ class InfoCard extends React.Component {
             showLearnMore: false, 
             canSkip: 0, 
             progressState: 0, 
-            numAnswered: 0  
+            numAnswered: 0,
+            numTopics: 0 
         };
     }
 
     componentWillMount() {
         console.log(this.props.issue);
+        let issues = [];
+        let topics = Object.keys(Data.issues)
+        for (let topic = 0; topic < topics.length; topic++){
+            for (let i = 0; i < Object.keys(Data.issues[topics[topic]]).length; i++){
+                issues.push([ topics[topic], Object.keys(Data.issues[topics[topic]])[i]] );
+            }
+        }
+        issues.sort(() => Math.random() - 0.5);
+        console.log(issues);
+
         this.setState({
+            numTopics: issues.length,
             meta: Data,
-            cards: Object.keys(Data.issues[this.props.issue]),
-            canSkip: Math.ceil(0.1 * Object.keys(Data.issues[this.props.issue]).length)
+            cards: issues, //Object.keys(Data.issues[this.props.issue]),
+            canSkip: Math.ceil(0.1 * issues.length)
         })
     }
 
     remove = () => {
-        let currentIssue = this.state.cards[0];
+        let currentIssue = this.state.cards[0]; //[ category, issue ]
         let stance = 0;
         (this.state.direction === "left") ? stance = 0 : stance = 1;
         let newMeta = Object.assign({}, this.state.meta);
         console.log(newMeta);
         console.log(currentIssue);
-        newMeta.issues[this.props.issue][currentIssue]['stance'] = stance;  
+        newMeta.issues[currentIssue[0]][currentIssue[1]]['stance'] = stance;  
 
         this.setState({
             meta: newMeta,
@@ -65,7 +77,7 @@ class InfoCard extends React.Component {
     }
 
     updateProgress = () => {
-        let baseNum = Object.keys(Data.issues[this.props.issue]).length;
+        let baseNum = this.state.numTopics
         let increase = ((this.state.numAnswered + 1) / baseNum ) * 100
         console.log(increase);
         this.setState({progressState: increase, numAnswered: this.state.numAnswered + 1})
@@ -107,8 +119,10 @@ class InfoCard extends React.Component {
                         onSwipe={this.setDirection}
                     >
                             <div className={"info-card " + this.state.direction} > 
-                                <h1 className="info-title">{this.state.meta.issues[this.props.issue][this.state.cards[0]]['title']}</h1>
-                                <p className="info-description text-light">{this.state.meta.issues[this.props.issue][this.state.cards[0]]['description']}</p>
+                                <div><span class="badge badge-success float-left">{ this.state.meta.issueName[this.state.cards[0][0]] }</span></div>
+                                <br/>
+                                <h1 className="info-title">{this.state.meta.issues[this.state.cards[0][0]][this.state.cards[0][1]]['title']}</h1>
+                                <p className="info-description text-light">{this.state.meta.issues[this.state.cards[0][0]][this.state.cards[0][1]]['description']}</p>
                                 <button className="btn btn-info btn-sm rounded-pill text-bold my-3 info-button" onClick={ this.handleShowMore }>Learn More</button>
                             </div>
                     </Swipeable>
@@ -118,7 +132,7 @@ class InfoCard extends React.Component {
                         onRequestClose={this.handleShowMore}
                         modalElementClass={"learn-more-modal"}
                         >
-                        <ExtraInfo moreInfo={this.state.meta.issues[this.props.issue][this.state.cards[0]]['more-info']} />
+                        <ExtraInfo close={ this.handleShowMore } moreInfo={this.state.meta.issues[this.state.cards[0][0]][this.state.cards[0][1]]['more-info']} />
                     </Drawer>
                     </div>
                 ) : (

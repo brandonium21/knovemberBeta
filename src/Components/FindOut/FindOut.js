@@ -99,7 +99,10 @@ class FindOut extends React.Component {
             <div className="footer shadow-lg">
             <ProgressBar now={ this.state.progress } variant={'info'} className="bg-white" style={{height: '3px'}}/>
             <Link 
-                to={ "/guide/"}
+                to={{ 
+                    pathname: "/guide/",
+                    weights: this.state.weight
+                }}
                 className="text-decoration-none text-dark"
             >
                 <Button className="mt-2" disabled={ this.state.progress === 100 ? false : true }>Continue</Button>
