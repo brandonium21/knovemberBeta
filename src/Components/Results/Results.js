@@ -6,8 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Candidate from "../Candidate/Candidate";
 import * as Nano  from 'nano'
- 
-
+import Data from '../../DataDriver.json';
 
 class Results extends React.Component {
     constructor(props) {
@@ -16,9 +15,9 @@ class Results extends React.Component {
     }
 
     componentWillMount(){
-        console.log(this.props);
+        //console.log(this.props);
         let metaData = this.props.resultsData;
-        console.log(metaData);
+        //console.log(metaData);
         let issues = []
         let topics = Object.keys(metaData.issues);
 
@@ -33,17 +32,20 @@ class Results extends React.Component {
 
         let favorableCandidates = [];
         let mostFavorableCandidates = [];
+        //console.log(issues);
 
         for (let issue = 0; issue < issues.length; issue++){
             // (cater)
-            let candidates = Object.keys(metaData.issues[ Object.keys(issues[issue])[0]][issues[issue]].candidate);
+            //let candidates = Object.keys(metaData.issues[ Object.keys(issues[issue])[0] ]  [issues[issue] ].candidate);
+            let candidates = metaData.candidates;
+            console.log(candidates)
             for (let candidate = 0; candidate < candidates.length; candidate++){
                 if (metaData.issues[ this.props.issue ][issues[issue]]['candidate'][candidates[candidate]] === parseInt(metaData.issues[ this.props.issue ][issues[issue]]['stance'])){
                     favorableCandidates.push(candidates[candidate])
                 }
             }
         }
-        console.log(favorableCandidates);
+        //console.log(favorableCandidates);
 
         favorableCandidates.sort();
         let current = null;
@@ -64,7 +66,7 @@ class Results extends React.Component {
         }
         mostFavorableCandidates.sort((a, b) => (a.score < b.score) ? 1 : -1);
         let topThreeCandidates = mostFavorableCandidates.slice(0, 3);
-        console.log(topThreeCandidates);
+        //console.log(topThreeCandidates);
         
         let graphData = [];
         let graphCaptions = [];
@@ -74,14 +76,14 @@ class Results extends React.Component {
             graphCaptions.push(metaData['candidates'][topThreeCandidates[topCandidate]['candidate']]['name']);
             topThreeMeta.push(topThreeCandidates[topCandidate]['candidate']);
         }
-        console.log(graphCaptions)
-
+        //console.log(graphCaptions)
+        /*
         let n = Nano('http://localhost:5984')
         const db = n.db.use('knovember-dev');
         db.insert(metaData.issues).then((body) => {
             console.log(body);
         });
-
+        */
         this.setState({
             topThreeCandidates: topThreeMeta,
             graphOptions: {

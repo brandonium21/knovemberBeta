@@ -25,7 +25,7 @@ class InfoCard extends React.Component {
     }
 
     componentWillMount() {
-        console.log(this.props.issue);
+        //console.log(this.props.issue);
         let issues = [];
         let topics = Object.keys(Data.issues)
         for (let topic = 0; topic < topics.length; topic++){
@@ -34,7 +34,7 @@ class InfoCard extends React.Component {
             }
         }
         issues.sort(() => Math.random() - 0.5);
-        console.log(issues);
+        //console.log(issues);
 
         this.setState({
             numTopics: issues.length,
@@ -49,8 +49,8 @@ class InfoCard extends React.Component {
         let stance = 0;
         (this.state.direction === "left") ? stance = 0 : stance = 1;
         let newMeta = Object.assign({}, this.state.meta);
-        console.log(newMeta);
-        console.log(currentIssue);
+        //console.log(newMeta);
+        //console.log(currentIssue);
         newMeta.issues[currentIssue[0]][currentIssue[1]]['stance'] = stance;  
 
         this.setState({
@@ -119,7 +119,7 @@ class InfoCard extends React.Component {
                         onSwipe={this.setDirection}
                     >
                             <div className={"info-card " + this.state.direction} > 
-                                <div><span class="badge badge-success float-left">{ this.state.meta.issueName[this.state.cards[0][0]] }</span></div>
+                                <div><span className="badge badge-success float-left">{ this.state.meta.issueName[this.state.cards[0][0]] }</span></div>
                                 <br/>
                                 <h1 className="info-title">{this.state.meta.issues[this.state.cards[0][0]][this.state.cards[0][1]]['title']}</h1>
                                 <p className="info-description text-light">{this.state.meta.issues[this.state.cards[0][0]][this.state.cards[0][1]]['description']}</p>

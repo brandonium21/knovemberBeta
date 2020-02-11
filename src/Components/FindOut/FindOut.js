@@ -29,7 +29,7 @@ class FindOut extends React.Component {
             formattedIssues: formattedIssues,
             weight: weights
         });
-        console.log(this.state.weight);
+        //console.log(this.state.weight);
     }
 
     handleRating = (rating, issue) => {
